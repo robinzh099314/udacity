@@ -123,4 +123,4 @@ Here's a [link to my video result](./project_video_out2.mp4)
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 When I tried on challenge video, the edge detection and warp function can not work well, after change parameters, it works but not satisfied, then I using adaptive threshold in every small window before edge detection. The result is still not well enough. I think the new technology like deep learning could help to resolve the complicated real videos
-![alt text][video2]
+Here's a [link to my video result](./challenge_video_out.mp4)
