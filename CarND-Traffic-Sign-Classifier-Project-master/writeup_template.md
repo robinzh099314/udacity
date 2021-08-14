@@ -22,7 +22,10 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.png "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image3]: ./examples/bar_classes_after_aug.jpg "Random Noise"
+[image_aug]: ./examples/bar_classes_after_aug.jpg "Random Noise"
+[image_aug1]: ./examples/aug1.png "augmented image"
+[image_aug2]: ./examples/aug2.png "augmented image"
+[image_aug3]: ./examples/aug3.png "augmented image"
 [image4]: ./examples/00016.jpg "Traffic Sign 14"
 [image5]: ./examples/00020.jpg "Traffic Sign 29"
 [image6]: ./examples/00023.jpg "Traffic Sign 3"
@@ -82,6 +85,9 @@ Here is an example of an original image and an augmented image:
 
 The difference between the original data set and the augmented data set is the following ... 
 
+![alt text][image_aug1] ![alt text][image_aug2] ![alt text][image_aug3]
+
+The whole dataset distribution is:
 ![alt text][image_aug]
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
@@ -153,18 +159,27 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a stop sign (probability of 0.83), and the image does contain a stop sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .83         			| Stop sign   									| 
-| .81     				| Bicycle 										|
-| .92					| 60 Km/h										|
-| .76	      			| 20 Km/h						 				|
-| .91				    | 120 Km/h										|
+| .99999       			| Stop sign   									| 
+| .0000035 				| Speed limit (30km/h)							|
+| .000028				| Keep right									|
+| .0000029     			| No entry						 				|
+| .0000028			    | Priority road									|
 
 
-For the second image ... 
+For the second image, the predict result is :
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .99997       			| Bicycles crossing								| 
+| .00024 				| Road narrows on the right						|
+| .000079				| Ahead only									|
+| .0000212     			| Wild animals crossing			 				|
+| .0000182			    | Children crossing								|
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
