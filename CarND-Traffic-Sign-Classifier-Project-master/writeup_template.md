@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.png "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image_aug]: ./examples/bar_classes_after_aug.jpg "Random Noise"
+[image_aug]: ./examples/bar_classes_after_aug.png "Random Noise"
 [image_aug1]: ./examples/aug1.png "augmented image"
 [image_aug2]: ./examples/aug2.png "augmented image"
 [image_aug3]: ./examples/aug3.png "augmented image"
